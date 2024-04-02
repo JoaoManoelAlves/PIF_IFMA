@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline:none;
+    box-sizing: border-box;
+  }
+  
+  #conteiner{
+    height: 70vw;
+    width: 100vw;
+    background: linear-gradient(0, #120c56, #000000);
+  }
+  
+  header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0, #000000);
+    gap: 20px;
+  }
+  
+  header h1{
+    color: #F5F5F5;
+  }
+  
+  .stars{
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+  
+  box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+	animation: anim-stars 10s linear infinite;
+}
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(150px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+.stars2{
+  position: relative;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+  animation: anim-stars 20s linear infinite;
+}
+
+.stars2::after{
+  content: " ";
+  position: absolute;
+  top: 150px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 15px 15px white,
+    125px 35px white,
+    50px 80px white,
+    10px 120px white,
+    275px 90px white,
+    230px 10px white,
+    120px 130px white,
+    300px 130px white,
+    220px 115px white;
+}
+
+
+  
+  #centerCalculos{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  }
+
+  #calculos{
+    height: 700px;
+    width: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  #calculos h1{
+    color: #000000;
+    background-color: #F5F5F5;
+    height: 50px;
+    width:65vw;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  #calculos span{
+ 
+  background: linear-gradient(to bottom, #7166eb 50%,#003a70 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+  }
+  
+  #calculos input{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(233, 233, 233);
+    color:#7166eb ;
+    transition: 1s;
+  }
+  
+  #calculos input:hover{
+    border: 2px solid #7166eb;
+  }
+
+  #calculos select{
+    background-color: rgb(233, 233, 233) ;
+    color: #7166eb;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 1s;
+  }
+
+  #calculos select:hover{
+   border: 2px solid #7166eb;
+  }
+  
+  #calculos button{
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(233, 233, 233);
+    color: black;
+    transition: 1s;
+    animation-name: color;
+    animation-duration:5s ;
+    }
+  
+  #calculos button:hover{
+   background-color: #F5F5F5;
+   color: #7166eb;
+   transform: scaleY(1.1);
+   border: 2px solid #7166eb;
+  }
+
+
+  #valores{
+    margin-top:10px;
+    gap: 10px;
+    height: 100px;
+   
+  }
+  
+  .resultado{
+     margin-top: 10px;
+     font-size: 19px;
+  }
+  
+  #valor{
+    color:rgb(33, 129, 9);
+  }
+  
+  #valorVox{
+    color:rgb(33, 129, 9);
+  }
+  
+
+  #simulacao{
+    height: 200px;
+    width: 1350px;
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+  }
+
+  #simulacao h1{
+    background: linear-gradient(to bottom, #7166eb 50%,#003a70 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  :root{
+     --red: rgb(102, 20, 20)
+     --frente:100px
+  }
+
+  #bola{
+    height: 50px;
+    width: 50px;
+    border-radius:100%;
+    background-color: var(--red);
+    animation-name: simulacao;
+    animation-duration: 10s;
+    margin-left: 10px;
+  }
+
+
+  @keyframes simulacao {
+    0%{
+      transform: translateX(0px);
+    }
+
+    50%{
+      transform: translate3d(var(frente));
+    }
+  }
