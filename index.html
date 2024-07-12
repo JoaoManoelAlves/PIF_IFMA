@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- fontes -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -48,15 +51,18 @@
             </p>
             
             <p class="resultado"> 
-              <strong> Ponto mais alto: <span id="pontoAlto"></span><br>
+              <strong> Altura: <span id="Altura"></span><br>
              </p>
              
+            <p class="resultado">
+              <strong> Altura máxima: <span id="AlturaMax"></span><br>
+            </p>
             </div>
       
              
           <div class="valores">
-            <h1>Calculo <span>Vox</span>  e <span>Dstancia</span> <Span>(x)</Span></h1> 
-            <span> Digite os sequintes valores: </span> <br>
+            <h1>Calculo <span>Vox</span>  e <span>Distancia</span> <Span>(X)</Span></h1> 
+            <p> Digite os sequintes valores: </p> <br>
             <input type="number" placeholder="Velocidade" id="VelocidadeVox">
             <input type="number" placeholder="Tempo" id="tempo">
             <input type="number" placeholder="posição inicial" id="distancia">  
@@ -74,9 +80,13 @@
         </div>
         </div>
         <div id="simulacao">
-          <h1>Simulação</h1>
         
-          <div id="bola"></div>
+        
+          <div class="bolinha" id="bola"></div>
+          <div class="ceu"></div>
+          <div class="chao">
+
+          </div>
         </div>
         </div>
 
