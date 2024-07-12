@@ -1,98 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- fontes -->
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Movimento Obliquo</h1>
+        <div class="stars"></div>
+        <div class="stars2"></div>
+      </header>
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <!-- div para centralizar a div calculo -->
+      <div class="centerCalculo">
 
-    <div id="conteiner">
-        <header>
-          
-          <h1> Movimento Obliquo  </h1>
-         <div class="stars" ></div>
-         <div class="stars2" ></div>
-        
-        </header>
-      <div class="stars" ></div>
-      <div class="stars2" ></div>
-
-      <div id="centerCalculos">
-        <div id="calculos">
-          <div>
-          <h1>Calculo <span>Voy</span> , aceleração da <span>Gravidade</span>  e <span>Lançamento Vertical</span>  </h1> 
-          <div class="valores">
-            <span> <strong> Digite os sequintes valores: </strong></span> <br>
-            <input type="number" placeholder="Velocidade" id="Velocidade">
-            <input type="number" placeholder="Tempo" id="Tempo">
-            <input type="number" placeholder="Posição inicial" id="posicaoInicial">
-            <select name="select" id="seno">
-              <option value="30"> 30</option>
-              <option value="45"> 45</option>
-              <option value="60"> 60</option>
-            </select>
-            <button onclick="ValorVoy()"> Calcular </button>
-            <p class="resultado"> 
-             <strong> Valor Voy: <span id="valorVoy"></span><br>
-            </p> 
-
-            <p class="resultado"> 
-                <strong> Valor Vy: <span id="valorVy"></span><br>
-               </p> 
-
-            <p class="resultado"> 
-             <strong> Aceleração da Gravidade: <span id="acerelarao"></span><br>
-            </p>
-            
-            <p class="resultado"> 
-              <strong> Altura: <span id="Altura"></span><br>
-             </p>
-             
-            <p class="resultado">
-              <strong> Altura máxima: <span id="AlturaMax"></span><br>
-            </p>
-            </div>
-      
-             
-          <div class="valores">
-            <h1>Calculo <span>Vox</span>  e <span>Distancia</span> <Span>(X)</Span></h1> 
-            <p> Digite os sequintes valores: </p> <br>
-            <input type="number" placeholder="Velocidade" id="VelocidadeVox">
-            <input type="number" placeholder="Tempo" id="tempo">
-            <input type="number" placeholder="posição inicial" id="distancia">  
-            <select name="select" id="Cosseno">
-              <option value="30"> 30</option>
-              <option value="45"> 45</option>
-              <option value="60"> 60</option>
-            </select>
-            <button onclick="ValorVox()"> Calcular </button>
-            <p class="resultado"> <strong> Valor Vox: <span id="valorVox"></span></p> 
-            <p class="resultado"> <strong> Valor da distancia: <span id="valorDistancia"></span></p> 
-            </div>
-
-           
-        </div>
-        </div>
-        <div id="simulacao">
-        
-        
-          <div class="bolinha" id="bola"></div>
-          <div class="ceu"></div>
-          <div class="chao">
-
-          </div>
-        </div>
-        </div>
-
-       
-      </div>
-      
     
-</body>
+      <div class="calculo">
+         <!-- parte do Voy -->
+        <p></p>
+        <input type="text" /><input type="text" /><input type="text" />
+        <select name="" id="">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <button></button>
+
+         <!--parte do Vox -->
+
+        <p></p>
+        <input type="text" /><input type="text" /><input type="text" />
+        <select name="" id="">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <button></button>
+      </div>
+    </div>
+      <div class="simulacao"></div>
+    </div>
+  </body>
 </html>
