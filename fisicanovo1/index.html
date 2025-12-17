@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Movimento Oblíquo</title>
+</head>
+<body>
+    <div id="container">
+        <div id="janela">
+            <h1>Aceleração da Gravidade</h1>
+
+            <h4>Digite a aceleração da gravidade (m/s²):</h4>
+            <input id="gravity" type="number" value="9.81"><br><br>
+
+            <label for="angle"><span>Ângulo:</span></label><br>
+            <select id="angle">
+                <option value="30">30°</option>
+                <option value="45" selected>45°</option>
+                <option value="60">60°</option>
+            </select><br><br>
+            <label for="velocity"><span id="text2">Velocidade inicial (m/s): </span> </label><br>
+            <input type="number" id="velocity" value="20"><br><br>
+            <button onclick="startSimulation()">Iniciar Simulação</button>
+
+            <h1 id="text1">Resultados:</h1>
+            <p id="resultado">Aceleração da Gravidade: 
+                <br>Altura Máxima: 
+                <br>Alcance: 
+                <br>Tempo:
+            </p>
+        </div>
+        <div id="animacao">
+            <canvas id="myCanvas" width="700" height="400"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
